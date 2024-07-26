@@ -10,12 +10,11 @@ public class KdvHesaplama {
         System.out.print("lütfen tutarı giriniz : ");
         tutar = scanner.nextInt();
         if (tutar < 1000) {
-            System.out.print("\nKDV tutarı : " + kdvTutarı1);
-            System.out.println();
-            System.out.print("\nKDV'li tutar : " + tutar * kdvTutarı1);
+            System.out.println("KDV tutarı : " + kdvTutarı1);
+            System.out.println("KDV'li tutar : " + tutar * kdvTutarı1);
         } else {
-            System.out.print("KDV tutarı" + kdvTutarı2);
-            System.out.print("KDV'li tutar : " + tutar * kdvTutarı2);
+            System.out.println("KDV tutarı : " + kdvTutarı2);
+            System.out.print("KDV'li tutar : " + ( (int)(tutar * kdvTutarı2)+tutar));
         }
     }
 }
